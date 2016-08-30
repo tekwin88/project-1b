@@ -1,0 +1,30 @@
+h1 {
+  color: red;
+  font-family: sans-serif;
+  font-size: 80px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 3em;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid {
+  font-family: sans-serif;
+  font-size: 80px;
+  height: 100px;
+  width: 100px;
+  background: #FCD599;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px -2px;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+}
