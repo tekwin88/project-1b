@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sudoku</title>
+
+    <!-- Links to your custom JavaScript and CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuery -->
+    <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+
+    <!-- Bootstrap libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+     <h1 id="messageBox">Mini-Sudoku</h1>
+
+     <!-- Using Navigation Bar -->
+       <!-- <nav class="navbar navbar-default"> -->
+         <div class="container-fluid">
+           <!-- <div class="collapse navbar-collapse" id="navbar-collapse-1">
+             <div class="col-md-12"> -->
+             <ul class="nav navbar-nav">
+
+
+               <li>
+                 <div class="col-md-3 col-sm-6 col-xs-12 center">
+                   <a href="#" id="ClearBtn" class="btn btn-primary" role="button" aria-haspopup="true" aria-expanded="false">Clear </a>
+                 </div>
+               </li>
+
+               <li class="dropdown">
+                 <div class="col-md-3 col-sm-6 col-xs-12 center">
+                 <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Play <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                   <li id='pattern1'><a href="#">Pattern 1</a></li>
+                   <li id='pattern2'><a href="#">Pattern 2</a></li>
+                   <li id='pattern3'><a href="#">Pattern 3</a></li>
+                 </ul>
+               </div>
+               </li>
+
+               <li>
+                 <div class="col-md-3 col-sm-6 col-xs-12 center">
+                   <a href="#" id="SubmitBtn" class="btn btn-primary" role="button" aria-haspopup="true" aria-expanded="false">Submit </a>
+                </div>
+               </li>
+             </ul>
+
+         </div><!-- for closing container-fluid -->
+
+    <div>
+      <div class='grid' id='0'></div>
+      <div class='grid' id='1'></div>
+      <div class='grid' id='2'></div>
+    </div>
+    <div>
+      <div class='grid' id='3'></div>
+      <div class='grid' id='4'></div>
+      <div class='grid' id='5'></div>
+    </div>
+    <div>
+      <div class='grid' id='6'></div>
+      <div class='grid' id='7'></div>
+      <div class='grid' id='8'></div>
+    </div>
+
+  </div>
+    <div class="footer">
+        <div id="resultsBox">
+        </div>
+    </div>
+    <script type="text/javascript" src="js/sudoku.js"></script>
+  </body>
+</html>
