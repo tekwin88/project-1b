@@ -17,33 +17,28 @@
 
   </head>
   <body>
-     <h1 id="messageBox">Mini-Sudoku</h1>
+     <h1 id="messageBox">Sudoku</h1>
 
-     <!-- Using Navigation Bar -->
-       <!-- <nav class="navbar navbar-default"> -->
          <div class="container-fluid">
-           <!-- <div class="collapse navbar-collapse" id="navbar-collapse-1">
-             <div class="col-md-12"> -->
              <ul class="nav navbar-nav">
-
-
                <li>
                  <div class="col-md-3 col-sm-6 col-xs-12 center">
                    <a href="#" id="ClearBtn" class="btn btn-primary" role="button" aria-haspopup="true" aria-expanded="false">Clear </a>
                  </div>
                </li>
-
                <li class="dropdown">
                  <div class="col-md-3 col-sm-6 col-xs-12 center">
                  <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Play <span class="caret"></span></a>
                  <ul class="dropdown-menu">
+                   <li id='patterndemo'><a href="#">Pattern Demo</a></li>
                    <li id='pattern1'><a href="#">Pattern 1</a></li>
                    <li id='pattern2'><a href="#">Pattern 2</a></li>
                    <li id='pattern3'><a href="#">Pattern 3</a></li>
+                   <li id='pattern4'><a href="#">Pattern 4</a></li>
+                   <li id='pattern5'><a href="#">Pattern 5</a></li>
                  </ul>
                </div>
                </li>
-
                <li>
                  <div class="col-md-3 col-sm-6 col-xs-12 center">
                    <a href="#" id="SubmitBtn" class="btn btn-primary" role="button" aria-haspopup="true" aria-expanded="false">Submit </a>
@@ -53,27 +48,106 @@
 
          </div><!-- for closing container-fluid -->
 
-    <div>
-      <div class='grid' id='0'></div>
-      <div class='grid' id='1'></div>
-      <div class='grid' id='2'></div>
+    <div class="box">
+      <div>
+        <div class='grid R1 C1 S1' id='R1C1'></div>
+        <div class='grid R1 C2 S1' id='R1C2'></div>     <!-- 1 -->
+        <div class='grid R1 C3 S1' id='R1C3'></div>
+        <div class='grid R1 C4 S2' id='R1C4'></div>
+        <div class='grid R1 C5 S2' id='R1C5'></div>     <!-- 2 -->
+        <div class='grid R1 C6 S2' id='R1C6'></div>
+        <div class='grid R1 C7 S3' id='R1C7'></div>
+        <div class='grid R1 C8 S3' id='R1C8'></div>     <!-- 3 -->
+        <div class='grid R1 C9 S3' id='R1C9'></div>
+        <div class='grid R2 C1 S1' id='R2C1'></div>
+        <div class='grid R2 C2 S1' id='R2C2'></div>     <!-- 4 -->
+        <div class='grid R2 C3 S1' id='R2C3'></div>
+        <div class='grid R2 C4 S2' id='R2C4'></div>
+        <div class='grid R2 C5 S2' id='R2C5'></div>     <!-- 5 -->
+        <div class='grid R2 C6 S2' id='R2C6'></div>
+        <div class='grid R2 C7 S3' id='R2C7'></div>
+        <div class='grid R2 C8 S3' id='R2C8'></div>     <!-- 6-->
+        <div class='grid R2 C9 S3' id='R2C9'></div>
+        <div class='grid R3 C1 S1' id='R3C1'></div>
+        <div class='grid R3 C2 S1' id='R3C2'></div>     <!-- 7 -->
+        <div class='grid R3 C3 S1' id='R3C3'></div>
+        <div class='grid R3 C4 S2' id='R3C4'></div>
+        <div class='grid R3 C5 S2' id='R3C5'></div>     <!-- 8 -->
+        <div class='grid R3 C6 S2' id='R3C6'></div>
+        <div class='grid R3 C7 S3' id='R3C7'></div>
+        <div class='grid R3 C8 S3' id='R3C8'></div>     <!-- 9 -->
+        <div class='grid R3 C9 S3' id='R3C9'></div>
+      </div>
     </div>
-    <div>
-      <div class='grid' id='3'></div>
-      <div class='grid' id='4'></div>
-      <div class='grid' id='5'></div>
-    </div>
-    <div>
-      <div class='grid' id='6'></div>
-      <div class='grid' id='7'></div>
-      <div class='grid' id='8'></div>
+    <div class="box">
+      <div>
+        <div class='grid R4 C1 S4' id='R4C1'></div>
+        <div class='grid R4 C2 S4' id='R4C2'></div>     <!-- 10 -->
+        <div class='grid R4 C3 S4' id='R4C3'></div>
+        <div class='grid R4 C4 S5' id='R4C4'></div>
+        <div class='grid R4 C5 S5' id='R4C5'></div>     <!-- 11 -->
+        <div class='grid R4 C6 S5' id='R4C6'></div>
+        <div class='grid R4 C7 S6' id='R4C7'></div>
+        <div class='grid R4 C8 S6' id='R4C8'></div>     <!-- 12 -->
+        <div class='grid R4 C9 S6' id='R4C9'></div>
+        <div class='grid R5 C1 S4' id='R5C1'></div>
+        <div class='grid R5 C2 S4' id='R5C2'></div>     <!-- 13 -->
+        <div class='grid R5 C3 S4' id='R5C3'></div>
+        <div class='grid R5 C4 S5' id='R5C4'></div>
+        <div class='grid R5 C5 S5' id='R5C5'></div>     <!-- 14 -->
+        <div class='grid R5 C6 S5' id='R5C6'></div>
+        <div class='grid R5 C7 S6' id='R5C7'></div>
+        <div class='grid R5 C8 S6' id='R5C8'></div>     <!-- 15 -->
+        <div class='grid R5 C9 S6' id='R5C9'></div>
+        <div class='grid R6 C1 S4' id='R6C1'></div>
+        <div class='grid R6 C2 S4' id='R6C2'></div>     <!-- 16 -->
+        <div class='grid R6 C3 S4' id='R6C3'></div>
+        <div class='grid R6 C4 S5' id='R6C4'></div>
+        <div class='grid R6 C5 S5' id='R6C5'></div>     <!-- 17 -->
+        <div class='grid R6 C6 S5' id='R6C6'></div>
+        <div class='grid R6 C7 S6' id='R6C7'></div>
+        <div class='grid R6 C8 S6' id='R6C8'></div>     <!-- 18 -->
+        <div class='grid R6 C9 S6' id='R6C9'></div>
+      </div>
+   </div>
+   <div class="box">
+      <div>
+        <div class='grid R7 C1 S7' id='R7C1'></div>
+        <div class='grid R7 C2 S7' id='R7C2'></div>     <!-- 19 -->
+        <div class='grid R7 C3 S7' id='R7C3'></div>
+        <div class='grid R7 C4 S8' id='R7C4'></div>
+        <div class='grid R7 C5 S8' id='R7C5'></div>     <!-- 20 -->
+        <div class='grid R7 C6 S8' id='R7C6'></div>
+        <div class='grid R7 C7 S9' id='R7C7'></div>
+        <div class='grid R7 C8 S9' id='R7C8'></div>     <!-- 21 -->
+        <div class='grid R7 C9 S9' id='R7C9'></div>
+        <div class='grid R8 C1 S7' id='R8C1'></div>
+        <div class='grid R8 C2 S7' id='R8C2'></div>     <!-- 22 -->
+        <div class='grid R8 C3 S7' id='R8C3'></div>
+        <div class='grid R8 C4 S8' id='R8C4'></div>
+        <div class='grid R8 C5 S8' id='R8C5'></div>     <!-- 23 -->
+        <div class='grid R8 C6 S8' id='R8C6'></div>
+        <div class='grid R8 C7 S9' id='R8C7'></div>
+        <div class='grid R8 C8 S9' id='R8C8'></div>     <!-- 24 -->
+        <div class='grid R8 C9 S9' id='R8C9'></div>
+        <div class='grid R9 C1 S7' id='R9C1'></div>
+        <div class='grid R9 C2 S7' id='R9C2'></div>     <!-- 25 -->
+        <div class='grid R9 C3 S7' id='R9C3'></div>
+        <div class='grid R9 C4 S8' id='R9C4'></div>
+        <div class='grid R9 C5 S8' id='R9C5'></div>     <!-- 26 -->
+        <div class='grid R9 C6 S8' id='R9C6'></div>
+        <div class='grid R9 C7 S9' id='R9C7'></div>
+        <div class='grid R9 C8 S9' id='R9C8'></div>     <!-- 27 -->
+        <div class='grid R9 C9 S9' id='R9C9'></div>
+      </div>
     </div>
 
-  </div>
     <div class="footer">
         <div id="resultsBox">
         </div>
     </div>
+
+    <!-- App libraries -->
     <script type="text/javascript" src="./js/sudoku.js"></script>
   </body>
 </html>
